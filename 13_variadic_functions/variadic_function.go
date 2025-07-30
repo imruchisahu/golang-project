@@ -35,3 +35,4 @@ func main(){
 	result := sum(nums...) // after nums put... (3 dots)
 	fmt.Println(result)
 }//output: 18
+

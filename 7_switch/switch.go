@@ -63,3 +63,5 @@ func main(){
 	whoAmI("golang")
 }
 //output: its a string
+
+

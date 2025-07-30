@@ -11,11 +11,11 @@ func main(){
 	}
 	output: 6
 	7
-	8 
+	8
 */
 
 /*
-//or 
+//or
 for _, num := range nums {
 	fmt.Println(num)
 }
@@ -24,8 +24,6 @@ for _, num := range nums {
 7
 8
 }*/
-
-
 
 /*
 //sum of element
@@ -50,10 +48,11 @@ import "fmt"
 func main(){
 	nums := []int {6, 7, 8}
 
-	for i, num := range nums{ 
+	for i, num := range nums{
 		fmt.Println(num, i)
 	}
 }
+
 /*output:
 6 0
 7 1
@@ -82,19 +81,22 @@ fname
 lname
 */
 
-//Unicode code point rune
-//starting byte of rune
-//255 -> 1 byte , 2 byte
+// Unicode code point rune
+// starting byte of rune
+// 255 -> 1 byte , 2 byte
 package main
+
 import "fmt"
-//iterating over data structure
-func main(){
+
+// iterating over data structure
+func main() {
 	//i is starting byte of rune
 	for i, c := range "golang" {
 		fmt.Println(i, c)
 		fmt.Println(i, string(c))
 	}
 }
+
 /*output:
 
 0 103

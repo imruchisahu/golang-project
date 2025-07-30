@@ -199,7 +199,8 @@ type order struct {
 	amount float32
 	status string
 	customer
-	createdAt time.Time //nanosecond precision
+	createdAt time.Time //n
+	// anosecond precision
 }
 func main() {
 	//newCustomer := customer{
@@ -219,3 +220,4 @@ func main() {
 	fmt.Println(newOrder.customer)
 }
 //ouput: {robin 1234567890}
+

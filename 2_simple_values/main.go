@@ -16,6 +16,7 @@ func main() {
 	fmt.Println(7.0 / 3.0)
 }
 
+
 /* in terminal: go run 2_simple_values/main.go
 output:
 3

@@ -68,3 +68,4 @@ func main(){
 	m2 := map[string]int{"price": 40, "phones": 4}
 	fmt.Println(maps.Equal(m1, m2)) //output: false
 }
+

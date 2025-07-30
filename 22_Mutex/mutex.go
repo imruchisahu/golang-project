@@ -111,4 +111,3 @@ func main(){
 	wg.Wait()
 	fmt.Println(myPost.views)
 }//output: 100
-

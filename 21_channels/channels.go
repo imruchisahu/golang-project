@@ -198,18 +198,18 @@ import (
 	"time"
 )
 
-//implement queue
-func emailSender(emailChan <-chan string, done chan bool){
-	defer func() { done <- true}()
+// implement queue
+func emailSender(emailChan <-chan string, done chan bool) {
+	defer func() { done <- true }()
 
 	<-done
-	for email := range emailChan{
+	for email := range emailChan {
 		fmt.Println("Sending email to", email)
-	time.Sleep(time.Second)
+		time.Sleep(time.Second)
 	}
 }
 
-func main(){
+func main() {
 	chan1 := make(chan int)
 	chan2 := make(chan string)
 
@@ -217,15 +217,15 @@ func main(){
 		chan1 <- 10
 	}()
 
-	go func(){
+	go func() {
 		chan2 <- "pong"
 	}()
 
 	for i := 0; i < 2; i++ {
 		select {
-		case chan1Val := <- chan1:
+		case chan1Val := <-chan1:
 			fmt.Println("received data from chan1", chan1Val)
-		case chan2Val := <- chan2:
+		case chan2Val := <-chan2:
 			fmt.Println("received data from chan2", chan2Val)
 
 		}

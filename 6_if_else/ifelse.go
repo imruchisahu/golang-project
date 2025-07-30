@@ -60,4 +60,5 @@ func main(){
 //output: Person is teenager 15
 
 
+
 // go does not have ternary, you will have to use normal if else

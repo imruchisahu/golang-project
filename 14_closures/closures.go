@@ -14,3 +14,4 @@ func main(){
 	fmt. Println(increment())//output: 1
 	fmt. Println(increment()) //output: 2
 }
+

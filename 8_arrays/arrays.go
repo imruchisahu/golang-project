@@ -44,6 +44,7 @@ func main(){
 }
 
 
+
 // -fixed size, that is predictable
 // - Memory optimazation
 // - Contant time access

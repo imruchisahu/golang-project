@@ -66,3 +66,5 @@ user@email.com //this change color only red color
 */
 //fixed all the mod 
 //in terminal run: go mod tidy
+// run code 
+//go run 
